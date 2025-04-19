@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keta Vora | Art & Crafts Portfolio</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/art-portfolio.css">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    
+    <!-- AOS Animation Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
+    <!-- Swiper Slider CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+</head>
+<body>
+    <!-- Cursor Elements -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+    
+    <!-- Theme Switcher -->
+    <div class="theme-switcher">
+        <button class="theme-btn active" data-theme="default">
+            <span class="color-circle" style="background: var(--primary-color)"></span>
+        </button>
+        <button class="theme-btn" data-theme="teal">
+            <span class="color-circle" style="background: #00bfa6"></span>
+        </button>
+        <button class="theme-btn" data-theme="blue">
+            <span class="color-circle" style="background: #3f72af"></span>
+        </button>
+        <button class="theme-btn" data-theme="dark">
+            <span class="color-circle" style="background: #1a1a1a"></span>
+        </button>
+    </div>
+    
+    <!-- Header -->
+    <header class="header scrolled">
+        <div class="container">
+            <div class="header-inner">
+                <div class="logo">
+                    <a href="index.html">
+                        <span class="logo-text">Keta<span class="text-primary">.</span></span>
+                    </a>
+                </div>
+                
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="index.html#about" class="nav-link">About</a></li>
+                        <li class="nav-item"><a href="index.html#experience" class="nav-link">Experience</a></li>
+                        <li class="nav-item"><a href="index.html#portfolio" class="nav-link">Design Portfolio</a></li>
+                        <li class="nav-item"><a href="art-portfolio.html" class="nav-link active">Art Portfolio</a></li>
+                        <li class="nav-item"><a href="index.html#contact" class="nav-link">Contact</a></li>
+                    </ul>
+                </nav>
+                
+                <div class="header-actions">
+                    <a href="index.html#contact" class="btn btn-primary">Let's Talk</a>
+                    <button class="menu-toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <div class="mobile-menu-inner">
+            <ul class="mobile-nav-list">
+                <li class="mobile-nav-item"><a href="index.html" class="mobile-nav-link">Home</a></li>
+                <li class="mobile-nav-item"><a href="index.html#about" class="mobile-nav-link">About</a></li>
+                <li class="mobile-nav-item"><a href="index.html#experience" class="mobile-nav-link">Experience</a></li>
+                <li class="mobile-nav-item"><a href="index.html#portfolio" class="mobile-nav-link">Design Portfolio</a></li>
+                <li class="mobile-nav-item"><a href="art-portfolio.html" class="mobile-nav-link active">Art Portfolio</a></li>
+                <li class="mobile-nav-item"><a href="index.html#contact" class="mobile-nav-link">Contact</a></li>
+            </ul>
+            
+            <div class="mobile-contact">
+                <div class="mobile-contact-item">
+                    <i class="bi bi-telephone"></i>
+                    <a href="tel:+919773240730">+91 9773 240 730</a>
+                </div>
+                <div class="mobile-contact-item">
+                    <i class="bi bi-envelope"></i>
+                    <a href="mailto:ketavora31@gmail.com">ketavora31@gmail.com</a>
+                </div>
+            </div>
+            
+            <div class="mobile-social">
+                <a href="#" class="social-link"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="social-link"><i class="bi bi-behance"></i></a>
+                <a href="#" class="social-link"><i class="bi bi-linkedin"></i></a>
+                <a href="#" class="social-link"><i class="bi bi-dribbble"></i></a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Art Hero Section -->
+    <section class="art-hero">
+        <div class="container">
+            <div class="art-hero-content" data-aos="fade-up">
+                <h1 class="art-hero-title">Artistic <span class="text-gradient">Expressions</span></h1>
+                <p class="art-hero-description">A collection of traditional art, sketches, paintings, and crafts that showcase my artistic journey and creative explorations.</p>
+            </div>
+            
+            <div class="art-hero-gallery" data-aos="fade-up" data-aos-delay="200">
+                <div class="art-hero-item art-item-1">
+                    <div class="art-image-container">
+                        <img src="images/art/featured-1.jpg" alt="Featured Artwork">
+                    </div>
+                </div>
+                <div class="art-hero-item art-item-2">
+                    <div class="art-image-container">
+                        <img src="images/art/featured-2.jpg" alt="Featured Artwork">
+                    </div>
+                </div>
+                <div class="art-hero-item art-item-3">
+                    <div class="art-image-container">
+                        <img src="images/art/featured-3.jpg" alt="Featured Artwork">
+                    </div>
+                </div>
+                <div class="art-hero-item art-item-4">
+                    <div class="art-image-container">
+                        <img src="images/art/featured-4.jpg" alt="Featured Artwork">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Art Categories Section -->
+    <section class="art-categories section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">My Artistic Journey</span>
+                <h2 class="section-title">Explore My Art Categories</h2>
+            </div>
+            
+            <div class="art-tabs" data-aos="fade-up" data-aos-delay="200">
+                <div class="art-tab-buttons">
+                    <button class="art-tab-btn active" data-tab="sketches">
+                        <i class="bi bi-pencil"></i>
+                        <span>Sketches</span>
+                    </button>
+                    <button class="art-tab-btn" data-tab="paintings">
+                        <i class="bi bi-palette"></i>
+                        <span>Paintings</span>
+                    </button>
+                    <button class="art-tab-btn" data-tab="crafts">
+                        <i class="bi bi-scissors"></i>
+                        <span>Crafts</span>
+                    </button>
+                    <button class="art-tab-btn" data-tab="digital">
+                        <i class="bi bi-tablet"></i>
+                        <span>Digital Art</span>
+                    </button>
+                </div>
+                
+                <div class="art-tab-content">
+                    <!-- Sketches Tab -->
+                    <div class="art-tab-pane active" id="sketches">
+                        <div class="art-masonry-grid">
+                            <div class="art-masonry-item">
+                                <div class="art-card">
+                                    <div class="art-image">
+                                        <img src="images/art/sketch-1.jpg" alt="Sketch Artwork">
+                                    </div>
+                                    <div class="art-overlay">
+                                        <div class="art-info">
+                                            <h3>Portrait Study</h3>
+                                            <p>Graphite on paper, 2022</p>
+                                            <button class="art-view-btn" data-art-id="sketch-1">View Details</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="art-masonry-item">
+                                <div class="art-card">
+                                    <div class="art-image">
+                                        <img src="images/art/sketch-2.jpg" alt="Sketch Artwork">
+                                    </div>
+                                    <div class="art-overlay">
+                                        <div class="art-info">
+                                            <h3>Urban Landscape</h3>
+                                            <p>Ink on paper, 2021</p>
+                                            <button class="art-view-btn" data-art-id="sketch-2">View Details</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="art-masonry-item">
+                                <div class="art-card">
+                                    <div class="art-image">
+                                        <img src="images/art/sketch-3.jpg" alt="Sketch Artwork">
+                                    </div>
+                                    <div class="art-overlay">
+                                        <div class="art-info">
+                                            <h3>Figure Drawing</h3>
+                                            <p>Charcoal on paper, 2022</p>
+                                            <button class="art-view-btn" data-art-id="sketch-3">View Details</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="art-masonry-item">
+                                <div class="art-card">
+                                    <div class="art-image">
+                                        <img src="images/art/sketch-4.jpg" alt="Sketch Artwork">
+                                    </div>
+                                    <div class="art-overlay">
+                                        <div class="art-info">
+                                            <h3>Still Life</h3>
+                                            <p>Pencil on paper, 2021</p>
+                                            <button class="art-view-btn" data-art-id="sketch-4">View Details</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="art-masonry-item">
+                                <div class="art-card">
+                                    <div class="art-image">
+                                        <img src="images/art/sketch-5.jpg" alt="Sketch Artwork">
+                                    </div>
+                                    <div class="art-overlay">
+                                        <div class="art-info">
+                                            <h3>Nature Study</h3>
+                                            <p>Graphite on paper, 2023</p>
+                                            <button class="art-view-btn" data-art-id="sketch-5">View Details</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="art-masonry-item">
+                                <div class="art-card">
+                                    <div class="art-image">
+                                        <img src="images/art/sketch-6.jpg" alt="Sketch Artwork">
+                                    </div>
+                                    <div class="art-overlay">
+                                        <div class="art-info">
+                                            <h3>Abstract Composition</h3>
+                                            <p>Ink and graphite, 2022</p>
+                                            <button class="art-view-btn" data-art-id="sketch-6">View Details</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Paintings Tab -->
+                    <div class="art-tab-pane" id="paintings">
+                        <div class="art-grid">
+                            <div class="art-grid-item">
+                                <div class="art-card">
+                                    <div class="art-image">
+                                        <img src="images/art/painting-1.jpg" alt="Painting Artwork">
+                                    </div>
+                                    <div class="art-overlay">
+                                        <div class="art-info">
+                                            <h3>Abstract Landscape</h3>
+                                            <p>Acrylic on canvas, 2022</p>
+                                            <button class="art-view-btn" data-art-id="painting-1">View Details</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="art-grid-item">
+                                <div class="art-card">
+                                    <div class="art-image">
+                                        <img src="images/art/painting-2.jpg" alt="Painting Artwork">
+                                    </div>
+                                    <div class="art-overlay">
+                                        <div class="art-info">
+                                            <h3>Floral Study</h3>
+                                            <p>Watercolor on paper, 2021</p>
+                                            <button class="art-view-btn" data-art-id="painting-2">View Details</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="art-grid-item">
+                                <div class="art-card">
+                                    <div class="art-image">
+                                        <img src="images/art/painting-3.jpg" alt="Painting Artwork">
+                                    </div>
+                                    <div class="art-overlay">
+                                        <div class="art-info">
+                                            <h3>Urban Sunset</h3>
+                                            <p>Oil on canvas, 2023</p>
+                                            <button class="art-view-btn" data-art-id="painting-3">View Details</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="art-grid-item">
+                                <div class="art-card">
+                                    <div class="art-image">
+                                        <img src="images/art/painting-4.jpg" alt="Painting Artwork">
+                                    </div>
+                                    <div class="art-overlay">
+                                        <div class="art-info">
+                                            <h3>Portrait in Blue</h3>
+                                            <p>Acrylic on canvas, 2022</p>
+                                            <button class="art-view-btn" data-art-id="painting-4">View Details</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="art-grid-item">
+                                <div class="art-card">
+                                    <div class="art-image">
+                                        <img src="images/art/painting-5.jpg" alt="Painting Artwork">
+                                    </div>
+                                    <div class="art-overlay">
+                                        <div class="art-info">
+                                            <h3>Abstract Emotions</h3>
+                                            <p>Mixed media, 2023</p>
+                                            <button class="art-view-btn" data-art-id="painting-5">View Details</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="art-grid-item">
+                                <div class="art-card">
+                                    <div class="art-image">
+                                        <img src="images/art/painting-6.jpg" alt="Painting Artwork">
+                                    </div>
+                                    <div class="art-overlay">
+                                        <div class="art-info">
+                                            <h3>Nature's Harmony</h3>
+                                            <p>Watercolor on paper, 2022</p>
+                                            <button class="art-view-btn" data-art-id="painting-6">View Details</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Crafts Tab -->
+                    <div class="art-tab-pane" id="crafts">
+                        <div class="art-slider-container">
+                            <div class="swiper art-swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="art-card">
+                                            <div class="art-image">
+                                                <img src="images/art/craft-1.jpg" alt="Craft Artwork">
+                                            </div>
+                                            <div class="art-overlay">
+                                                <div class="art-info">
+                                                    <h3>Handmade Pottery</h3>
+                                                    <p>Ceramic, 2022</p>
+                                                    <button class="art-view-btn" data-art-id="craft-1">View Details</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="art-card">
+                                            <div class="art-image">
+                                                <img src="images/art/craft-2.jpg" alt="Craft Artwork">
+                                            </div>
+                                            <div class="art-overlay">
+                                                <div class="art-info">
+                                                    <h3>Textile Art</h3>
+                                                    <p>Mixed fabrics, 2021</p>
+                                                    <button class="art-view-btn" data-art-id="craft-2">View Details</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="art-card">
+                                            <div class="art-image">
+                                                <img src="images/art/craft-3.jpg" alt="Craft Artwork">
+                                            </div>
+                                            <div class="art-overlay">
+                                                <div class="art-info">
+                                                    <h3>Paper Sculpture</h3>
+                                                    <p>Handmade paper, 2023</p>
+                                                    <button class="art-view-btn" data-art-id="craft-3">View Details</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="art-card">
+                                            <div class="art-image">
+                                                <img src="images/art/craft-4.jpg" alt="Craft Artwork">
+                                            </div>
+                                            <div class="art-overlay">
+                                                <div class="art-info">
+                                                    <h3>Jewelry Design</h3>
+                                                    <p>Mixed materials, 2022</p>
+                                                    <button class="art-view-btn" data-art-id="craft-4">View Details</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="art-card">
+                                            <div class="art-image">
+                                                <img src="images/art/craft-5.jpg" alt="Craft Artwork">
+                                            </div>
+                                            <div class="art-overlay">
+                                                <div class="art-info">
+                                                    <h3>Macramé Wall Hanging</h3>
+                                                    <p>Cotton rope, 2023</p>
+                                                    <button class="art-view-btn" data-art-id="craft-5">View Details</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Digital Art Tab -->
+                    <div class="art-tab-pane" id="digital">
+                        <div class="art-grid art-grid-large">
+                            <div class="art-grid-item">
+                                <div class="art-card">
+                                    <div class="art-image">
+                                        <img src="images/art/digital-1.jpg" alt="Digital Artwork">
+                                    </div>
+                                    <div class="art-overlay">
+                                        <div class="art-info">
+                                            <h3>Digital Landscape</h3>
+                                            <p>Procreate, 2023</p>
+                                            <button class="art-view-btn" data-art-id="digital-1">View Details</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="art-grid-item">
+                                <div class="art-card">
+                                    <div class="art-image">
+                                        <img src="images/art/digital-2.jpg" alt="Digital Artwork">
+                                    </div>
+                                    <div class="art-overlay">
+                                        <div class="art-info">
+                                            <h3>Character Design</h3>
+                                            <p>Adobe Photoshop, 2022</p>
+                                            <button class="art-view-btn" data-art-id="digital-2">View Details</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="art-grid-item">
+                                <div class="art-card">
+                                    <div class="art-image">
+                                        <img src="images/art/digital-3.jpg" alt="Digital Artwork">
+                                    </div>
+                                    <div class="art-overlay">
+                                        <div class="art-info">
+                                            <h3>Abstract Composition</h3>
+                                            <p>Adobe Illustrator, 2023</p>
+                                            <button class="art-view-btn" data-art-id="digital-3">View Details</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="art-grid-item">
+                                <div class="art-card">
+                                    <div class="art-image">
+                                        <img src="images/art/digital-4.jpg" alt="Digital Artwork">
+                                    </div>
+                                    <div class="art-overlay">
+                                        <div class="art-info">
+                                            <h3>Digital Portrait</h3>
+                                            <p>Procreate, 2022</p>
+                                            <button class="art-view-btn" data-art-id="digital-4">View Details</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Featured Art Project -->
+    <section class="featured-art section bg-light">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">Featured Project</span>
+                <h2 class="section-title">Artistic Journey Series</h2>
+            </div>
+            
+            <div class="featured-art-content" data-aos="fade-up" data-aos-delay="200">
+                <div class="featured-art-image">
+                    <div class="image-container">
+                        <img src="images/art/featured-project.jpg" alt="Featured Art Project">
+                        <div class="shape shape-1"></div>
+                        <div class="shape shape-2"></div>
+                    </div>
+                </div>
+                <div class="featured-art-info">
+                    <h3 class="featured-art-title">Evolution of Style: A Personal Exploration</h3>
+                    <p class="featured-art-description">
+                        This series represents my artistic journey over the past five years, showcasing the evolution of my style, techniques, and subject matter. Each piece in this collection reflects a different phase of my development as an artist.
+                    </p>
+                    <p class="featured-art-description">
+                        From traditional sketches to experimental mixed media, this project documents my exploration of various mediums and my growing confidence in artistic expression.
+                    </p>
+                    <div class="featured-art-details">
+                        <div class="detail-item">
+                            <span class="detail-label">Medium</span>
+                            <span class="detail-value">Mixed (Graphite, Watercolor, Acrylic)</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Duration</span>
+                            <span class="detail-value">2018 - 2023</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Exhibition</span>
+                            <span class="detail-value">Local Art Gallery, Ahmedabad (2023)</span>
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn-primary">View Full Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Art Process Section -->
+    <section class="art-process section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">Behind The Scenes</span>
+                <h2 class="section-title">My Creative Process</h2>
+            </div>
+            
+            <div class="process-timeline" data-aos="fade-up" data-aos-delay="200">
+                <div class="process-item">
+                    <div class="process-number">01</div>
+                    <div class="process-content">
+                        <h3>Inspiration & Concept</h3>
+                        <p>Every artwork begins with inspiration. I gather ideas from nature, urban environments, emotions, and personal experiences. This stage involves research, sketching initial concepts, and exploring different directions.</p>
+                    </div>
+                </div>
+                
+                <div class="process-item">
+                    <div class="process-number">02</div>
+                    <div class="process-content">
+                        <h3>Preliminary Sketches</h3>
+                        <p>Once I have a clear concept, I create preliminary sketches to explore composition, form, and structure. This stage helps me visualize the final piece and work through any technical challenges.</p>
+                    </div>
+                </div>
+                
+                <div class="process-item">
+                    <div class="process-number">03</div>
+                    <div class="process-content">
+                        <h3>Medium Selection</h3>
+                        <p>I select the appropriate medium based on the concept and desired effect. Whether it's graphite for detailed sketches, watercolor for fluid expressions, or mixed media for textural complexity, each medium offers unique possibilities.</p>
+                    </div>
+                </div>
+                
+                <div class="process-item">
+                    <div class="process-number">04</div>
+                    <div class="process-content">
+                        <h3>Creation & Refinement</h3>
+                        <p>The creation process involves building layers, adding details, and continuously refining the artwork. I work iteratively, stepping back regularly to assess the piece and make adjustments as needed.</p>
+                    </div>
+                </div>
+                
+                <div class="process-item">
+                    <div class="process-number">05</div>
+                    <div class="process-content">
+                        <h3>Completion & Reflection</h3>
+                        <p>Once the artwork is complete, I take time to reflect on the process and outcome. This reflection informs future projects and contributes to my ongoing artistic development.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Art Gallery Section -->
+    <section class="art-gallery section bg-light">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">Instagram Gallery</span>
+                <h2 class="section-title">Follow My Artistic Journey</h2>
+            </div>
+            
+            <div class="instagram-gallery" data-aos="fade-up" data-aos-delay="200">
+                <div class="insta-grid">
+                    <div class="insta-item">
+                        <a href="#" class="insta-link">
+                            <img src="images/art/insta-1.jpg" alt="Instagram Art Post">
+                            <div class="insta-overlay">
+                                <i class="bi bi-instagram"></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="insta-item">
+                        <a href="#" class="insta-link">
+                            <img src="images/art/insta-2.jpg" alt="Instagram Art Post">
+                            <div class="insta-overlay">
+                                <i class="bi bi-instagram"></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="insta-item">
+                        <a href="#" class="insta-link">
+                            <img src="images/art/insta-3.jpg" alt="Instagram Art Post">
+                            <div class="insta-overlay">
+                                <i class="bi bi-instagram"></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="insta-item">
+                        <a href="#" class="insta-link">
+                            <img src="images/art/insta-4.jpg" alt="Instagram Art Post">
+                            <div class="insta-overlay">
+                                <i class="bi bi-instagram"></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="insta-item">
+                        <a href="#" class="insta-link">
+                            <img src="images/art/insta-5.jpg" alt="Instagram Art Post">
+                            <div class="insta-overlay">
+                                <i class="bi bi-instagram"></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="insta-item">
+                        <a href="#" class="insta-link">
+                            <img src="images/art/insta-6.jpg" alt="Instagram Art Post">
+                            <div class="insta-overlay">
+                                <i class="bi bi-instagram"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="insta-follow">
+                    <a href="#" class="btn btn-outline">
+                        <i class="bi bi-instagram"></i> Follow on Instagram
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Art CTA Section -->
+    <section class="art-cta section">
+        <div class="container">
+            <div class="cta-inner" data-aos="fade-up">
+                <div class="cta-content">
+                    <h2 class="cta-title">Interested in Custom Artwork?</h2>
+                    <p class="cta-description">I create custom art pieces for homes, offices, and special occasions. Let's collaborate on something unique that speaks to your vision.</p>
+                </div>
+                <a href="index.html#contact" class="btn btn-primary btn-lg">Get in Touch</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Art Modal -->
+    <div class="art-modal">
+        <div class="art-modal-container">
+            <button class="art-modal-close"><i class="bi bi-x-lg"></i></button>
+            <div class="art-modal-content">
+                <!-- Modal content will be dynamically generated with JavaScript -->
+            </div>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-logo">
+                    <a href="index.html">
+                        <span class="logo-text">Keta<span class="text-primary">.</span></span>
+                    </a>
+                </div>
+                
+                <div class="footer-nav">
+                    <ul class="footer-nav-list">
+                        <li class="footer-nav-item"><a href="index.html" class="footer-nav-link">Home</a></li>
+                        <li class="footer-nav-item"><a href="index.html#about" class="footer-nav-link">About</a></li>
+                        <li class="footer-nav-item"><a href="index.html#experience" class="footer-nav-link">Experience</a></li>
+                        <li class="footer-nav-item"><a href="index.html#portfolio" class="footer-nav-link">Design Portfolio</a></li>
+                        <li class="footer-nav-item"><a href="art-portfolio.html" class="footer-nav-link">Art Portfolio</a></li>
+                        <li class="footer-nav-item"><a href="index.html#contact" class="footer-nav-link">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-social">
+                    <a href="#" class="social-link"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="bi bi-behance"></i></a>
+                    <a href="#" class="social-link"><i class="bi bi-linkedin"></i></a>
+                    <a href="#" class="social-link"><i class="bi bi-dribbble"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="copyright">© 2023 Keta Vora. All Rights Reserved.</p>
+                <p class="credits">Designed with <i class="bi bi-heart-fill"></i> by Keta Vora</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Back to Top Button -->
+    <button class="back-to-top">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+    
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/art-data.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/art-portfolio.js"></script>
+</body>
+</html>
+

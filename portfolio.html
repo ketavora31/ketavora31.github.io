@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Keta Vora - Graphic Designer</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/portfolio.css">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    
+    <!-- AOS Animation Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body class="portfolio-page">
+    <!-- Cursor Elements -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+    
+    <!-- Theme Switcher -->
+    <div class="theme-switcher">
+        <button class="theme-btn active" data-theme="default">
+            <span class="color-circle" style="background: var(--primary-color)"></span>
+        </button>
+        <button class="theme-btn" data-theme="teal">
+            <span class="color-circle" style="background: #00bfa6"></span>
+        </button>
+        <button class="theme-btn" data-theme="blue">
+            <span class="color-circle" style="background: #3f72af"></span>
+        </button>
+        <button class="theme-btn" data-theme="dark">
+            <span class="color-circle" style="background: #1a1a1a"></span>
+        </button>
+    </div>
+    
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-inner">
+                <div class="logo">
+                    <a href="index.html">
+                        <span class="logo-text">Keta<span class="text-primary">.</span></span>
+                    </a>
+                </div>
+                
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="index.html#about" class="nav-link">About</a></li>
+                        <li class="nav-item"><a href="index.html#experience" class="nav-link">Experience</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link active">Portfolio</a></li>
+                        <li class="nav-item"><a href="index.html#contact" class="nav-link">Contact</a></li>
+                    </ul>
+                </nav>
+                
+                <div class="header-actions">
+                    <a href="index.html#contact" class="btn btn-primary">Let's Talk</a>
+                    <button class="menu-toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <div class="mobile-menu-inner">
+            <ul class="mobile-nav-list">
+                <li class="mobile-nav-item"><a href="index.html" class="mobile-nav-link">Home</a></li>
+                <li class="mobile-nav-item"><a href="index.html#about" class="mobile-nav-link">About</a></li>
+                <li class="mobile-nav-item"><a href="index.html#experience" class="mobile-nav-link">Experience</a></li>
+                <li class="mobile-nav-item"><a href="#" class="mobile-nav-link active">Portfolio</a></li>
+                <li class="mobile-nav-item"><a href="index.html#contact" class="mobile-nav-link">Contact</a></li>
+            </ul>
+            
+            <div class="mobile-contact">
+                <div class="mobile-contact-item">
+                    <i class="bi bi-telephone"></i>
+                    <a href="tel:+919773240730">+91 9773 240 730</a>
+                </div>
+                <div class="mobile-contact-item">
+                    <i class="bi bi-envelope"></i>
+                    <a href="mailto:ketavora31@gmail.com">ketavora31@gmail.com</a>
+                </div>
+            </div>
+            
+            <div class="mobile-social">
+                <a href="#" class="social-link"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="social-link"><i class="bi bi-behance"></i></a>
+                <a href="#" class="social-link"><i class="bi bi-linkedin"></i></a>
+                <a href="#" class="social-link"><i class="bi bi-dribbble"></i></a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Portfolio Hero -->
+    <section class="portfolio-hero">
+        <div class="container">
+            <div class="portfolio-hero-content" data-aos="fade-up">
+                <h1 class="portfolio-hero-title">My Creative <span class="text-gradient">Portfolio</span></h1>
+                <p class="portfolio-hero-description">
+                    Explore my collection of design projects showcasing creativity, innovation, and attention to detail.
+                </p>
+            </div>
+        </div>
+        <div class="portfolio-hero-bg">
+            <div class="portfolio-hero-shape"></div>
+        </div>
+    </section>
+    
+    <!-- Portfolio Gallery -->
+    <section class="portfolio-gallery section">
+        <div class="container">
+            <div class="portfolio-filter" data-aos="fade-up">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="branding">Branding</button>
+                <button class="filter-btn" data-filter="illustration">Illustration</button>
+                <button class="filter-btn" data-filter="ui-ux">UI/UX</button>
+                <button class="filter-btn" data-filter="print">Print</button>
+                <button class="filter-btn" data-filter="motion">Motion</button>
+            </div>
+            
+            <div class="portfolio-masonry" data-aos="fade-up" data-aos-delay="200">
+                <!-- Portfolio items will be dynamically generated with JavaScript -->
+            </div>
+            
+            <div class="portfolio-load-more" data-aos="fade-up" data-aos-delay="300">
+                <button class="btn btn-outline btn-lg" id="loadMoreBtn">
+                    Load More <i class="bi bi-plus-lg"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Portfolio Process -->
+    <section class="portfolio-process section bg-light">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">My Approach</span>
+                <h2 class="section-title">Design Process</h2>
+            </div>
+            
+            <div class="process-steps" data-aos="fade-up" data-aos-delay="200">
+                <div class="process-step">
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <h3 class="step-title">Discovery</h3>
+                        <p class="step-description">
+                            I begin by understanding your brand, goals, and target audience to establish a solid foundation for the design.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <h3 class="step-title">Research</h3>
+                        <p class="step-description">
+                            Thorough research into industry trends, competitors, and visual references to inform the creative direction.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <h3 class="step-title">Concept</h3>
+                        <p class="step-description">
+                            Developing initial concepts and sketches that align with your brand identity and project objectives.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">04</div>
+                    <div class="step-content">
+                        <h3 class="step-title">Design</h3>
+                        <p class="step-description">
+                            Creating polished designs with attention to detail, typography, color, and visual hierarchy.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">05</div>
+                    <div class="step-content">
+                        <h3 class="step-title">Refinement</h3>
+                        <p class="step-description">
+                            Iterative refinement based on feedback to ensure the final design meets all requirements.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">06</div>
+                    <div class="step-content">
+                        <h3 class="step-title">Delivery</h3>
+                        <p class="step-description">
+                            Providing final deliverables in all required formats with comprehensive documentation as needed.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Call to Action -->
+    <section class="cta section">
+        <div class="container">
+            <div class="cta-inner" data-aos="fade-up">
+                <div class="cta-content">
+                    <h2 class="cta-title">Ready to Start Your Project?</h2>
+                    <p class="cta-description">
+                        Let's collaborate to bring your creative vision to life with designs that captivate and inspire.
+                    </p>
+                </div>
+                <div class="cta-action">
+                    <a href="index.html#contact" class="btn btn-primary btn-lg">Get in Touch</a>
+                </div>
+            </div>
+        </div>
+        <div class="cta-bg">
+            <div class="cta-bg-shape"></div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-logo">
+                    <a href="index.html">
+                        <span class="logo-text">Keta<span class="text-primary">.</span></span>
+                    </a>
+                </div>
+                
+                <div class="footer-nav">
+                    <ul class="footer-nav-list">
+                        <li class="footer-nav-item"><a href="index.html" class="footer-nav-link">Home</a></li>
+                        <li class="footer-nav-item"><a href="index.html#about" class="footer-nav-link">About</a></li>
+                        <li class="footer-nav-item"><a href="index.html#experience" class="footer-nav-link">Experience</a></li>
+                        <li class="footer-nav-item"><a href="#" class="footer-nav-link">Portfolio</a></li>
+                        <li class="footer-nav-item"><a href="index.html#contact" class="footer-nav-link">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-social">
+                    <a href="#" class="social-link"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="bi bi-behance"></i></a>
+                    <a href="#" class="social-link"><i class="bi bi-linkedin"></i></a>
+                    <a href="#" class="social-link"><i class="bi bi-dribbble"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="copyright">© 2023 Keta Vora. All Rights Reserved.</p>
+                <p class="credits">Designed with <i class="bi bi-heart-fill"></i> by Keta Vora</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Back to Top Button -->
+    <button class="back-to-top">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+    
+    <!-- Portfolio Modal -->
+    <div class="portfolio-modal">
+        <div class="modal-container">
+            <button class="modal-close"><i class="bi bi-x-lg"></i></button>
+            <div class="modal-content">
+                <!-- Modal content will be dynamically generated with JavaScript -->
+            </div>
+        </div>
+    </div>
+    
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="js/portfolio-data.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/portfolio.js"></script>
+</body>
+</html>
+

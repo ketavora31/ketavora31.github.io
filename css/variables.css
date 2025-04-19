@@ -1,0 +1,161 @@
+:root {
+    /* Primary Color Scheme - Elegant Purple */
+    --primary-color: #6c63ff;
+    --primary-dark: #5a52d9;
+    --primary-light: #8f88ff;
+    
+    /* Secondary Color */
+    --secondary-color: #ff6584;
+    --secondary-dark: #e55a78;
+    --secondary-light: #ff7f9a;
+    
+    /* Neutral Colors */
+    --dark: #2d2d2d;
+    --medium-dark: #4a4a4a;
+    --medium: #717171;
+    --medium-light: #a0a0a0;
+    --light: #e0e0e0;
+    --ultra-light: #f8f9fa;
+    --white: #ffffff;
+    
+    /* Accent Colors */
+    --accent-1: #36d1dc;
+    --accent-2: #ffcb57;
+    --accent-3: #61c0bf;
+    
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+    --gradient-secondary: linear-gradient(135deg, var(--secondary-color), var(--secondary-dark));
+    --gradient-accent: linear-gradient(135deg, var(--accent-1), var(--accent-3));
+    
+    /* Shadows */
+    --shadow-sm: 0 2px 10px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 5px 20px rgba(0, 0, 0, 0.08);
+    --shadow-lg: 0 10px 30px rgba(0, 0, 0, 0.12);
+    --shadow-primary: 0 8px 25px rgba(108, 99, 255, 0.25);
+    
+    /* Transitions */
+    --transition-fast: all 0.2s ease;
+    --transition-normal: all 0.3s ease;
+    --transition-slow: all 0.5s ease;
+    
+    /* Border Radius */
+    --radius-sm: 4px;
+    --radius-md: 8px;
+    --radius-lg: 16px;
+    --radius-xl: 24px;
+    --radius-round: 50%;
+    
+    /* Spacing */
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 2rem;
+    --spacing-lg: 3rem;
+    --spacing-xl: 5rem;
+    
+    /* Font Sizes */
+    --text-xs: 0.75rem;
+    --text-sm: 0.875rem;
+    --text-base: 1rem;
+    --text-md: 1.125rem;
+    --text-lg: 1.25rem;
+    --text-xl: 1.5rem;
+    --text-2xl: 2rem;
+    --text-3xl: 2.5rem;
+    --text-4xl: 3rem;
+    --text-5xl: 4rem;
+  }
+  
+  /* Alternative Color Schemes - Can be toggled with JavaScript */
+  .theme-teal {
+    --primary-color: #00bfa6;
+    --primary-dark: #00a896;
+    --primary-light: #4dd8c7;
+    --secondary-color: #ff7e67;
+    --secondary-dark: #e57260;
+    --secondary-light: #ff9a87;
+  }
+  
+  .theme-blue {
+    --primary-color: #3f72af;
+    --primary-dark: #355e92;
+    --primary-light: #5d8fc9;
+    --secondary-color: #ff9a3c;
+    --secondary-dark: #e58a36;
+    --secondary-light: #ffb168;
+  }
+  
+  .theme-dark {
+    --dark: #f8f9fa;
+    --medium-dark: #e0e0e0;
+    --medium: #a0a0a0;
+    --medium-light: #717171;
+    --light: #4a4a4a;
+    --ultra-light: #2d2d2d;
+    --white: #1a1a1a;
+  }
+  
+  :root {
+    /* Colors */
+    --primary-color: #6C63FF;
+    --primary-dark: #5A52D5;
+    --secondary-color: #FF6B6B;
+    --dark: #2D2D2D;
+    --medium: #6B6B6B;
+    --light: #E0E0E0;
+    --ultra-light: #F8F9FA;
+    --white: #FFFFFF;
+    
+    /* Gradients */
+    --gradient-primary: linear-gradient(45deg, #6C63FF, #5A52D5);
+    --gradient-secondary: linear-gradient(45deg, #FF6B6B, #FF8E8E);
+    
+    /* Shadows */
+    --shadow-sm: 0 5px 15px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 10px 20px rgba(0, 0, 0, 0.08);
+    --shadow-lg: 0 15px 30px rgba(0, 0, 0, 0.1);
+    --shadow-primary: 0 10px 20px rgba(108, 99, 255, 0.2);
+    
+    /* Border Radius */
+    --radius-sm: 4px;
+    --radius-md: 8px;
+    --radius-lg: 16px;
+    --radius-round: 50%;
+    
+    /* Transitions */
+    --transition-fast: 0.3s ease;
+    --transition-normal: 0.5s ease;
+    --transition-slow: 0.8s ease;
+}
+
+/* Theme: Teal */
+[data-theme="teal"] {
+    --primary-color: #00BFA6;
+    --primary-dark: #00A896;
+    --gradient-primary: linear-gradient(45deg, #00BFA6, #00A896);
+    --shadow-primary: 0 10px 20px rgba(0, 191, 166, 0.2);
+}
+
+/* Theme: Blue */
+[data-theme="blue"] {
+    --primary-color: #3F72AF;
+    --primary-dark: #2C5282;
+    --gradient-primary: linear-gradient(45deg, #3F72AF, #2C5282);
+    --shadow-primary: 0 10px 20px rgba(63, 114, 175, 0.2);
+}
+
+/* Theme: Dark */
+[data-theme="dark"] {
+    --primary-color: #FF6B6B;
+    --primary-dark: #FF5252;
+    --dark: #F8F9FA;
+    --medium: #E0E0E0;
+    --light: #4A4A4A;
+    --ultra-light: #2D2D2D;
+    --white: #1A1A1A;
+    --gradient-primary: linear-gradient(45deg, #FF6B6B, #FF5252);
+    --shadow-primary: 0 10px 20px rgba(255, 107, 107, 0.2);
+    --shadow-sm: 0 5px 15px rgba(0, 0, 0, 0.2);
+    --shadow-md: 0 10px 20px rgba(0, 0, 0, 0.3);
+    --shadow-lg: 0 15px 30px rgba(0, 0, 0, 0.4);
+}
